@@ -10,6 +10,17 @@ public class AudioController : MonoBehaviour
     int audioCount = 2;
     int audioPlaying = 1;
     private AudioSource audioSource;
+
+    public static AudioController audioController { get; private set; }
+    private void Awake()
+    {
+        if (audioController == null)
+        {
+            audioController = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -33,4 +44,11 @@ public class AudioController : MonoBehaviour
         audioSource.PlayOneShot(clip2);
 
     }
+
+
+    public void PlayAudio(AudioClip audio)
+    {
+        audioSource.PlayOneShot(audio);
+    }
+
 }

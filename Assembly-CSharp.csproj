@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{EA42D979-F133-5F1C-C714-522C6C9ACD68}</ProjectGuid>
+    <ProjectGuid>{BF19E8F7-E569-9C77-BBD0-5045DA575E95}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -69,15 +69,17 @@
     <Compile Include="Assets\Scripts\Animations\MenuMoveScript.cs" />
     <Compile Include="Assets\Scripts\Ator.cs" />
     <Compile Include="Assets\Scripts\AudioController.cs" />
+    <Compile Include="Assets\Scripts\ButtonOption.cs" />
     <Compile Include="Assets\Scripts\Char1.cs" />
     <Compile Include="Assets\Scripts\Char2.cs" />
     <Compile Include="Assets\Scripts\CharTemp.cs" />
-    <Compile Include="Assets\Scripts\Fade.cs" />
     <Compile Include="Assets\Scripts\Fundo.cs" />
     <Compile Include="Assets\Scripts\Imagem.cs" />
     <Compile Include="Assets\Scripts\Opcoes.cs" />
+    <Compile Include="Assets\Scripts\Scene\Fade.cs" />
     <Compile Include="Assets\Scripts\Scene\MenuOptions.cs" />
     <Compile Include="Assets\Scripts\Scene\Scene.cs" />
+    <Compile Include="Assets\Scripts\Scene\SceneCycle.cs" />
     <Reference Include="UnityEngine">
       <HintPath>d:/Users/PC/Documents/Unity/2019.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -607,85 +609,85 @@
       <HintPath>d:/Users/PC/Documents/Unity/2019.3.14f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Path.Editor">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="PsdPlugin">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Psdimporter.Editor">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/Users/PC/Documents/UnityProjects/Livro Contado/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/Users/PC/Documents/UnityProjects/LivroCadeMeuFone/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

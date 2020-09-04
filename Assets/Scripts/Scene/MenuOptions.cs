@@ -8,6 +8,9 @@ public class MenuOptions : MonoBehaviour
 
     [Header("MenuOptions")]
     bool menuState = false;
+    [SerializeField]
+    GameObject menuButtons;
+
     
     // Start is called before the first frame update
 
@@ -19,6 +22,10 @@ public class MenuOptions : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
+    }
+     void Start()
+    {
+        menuButtons.SetActive(false);
     }
 
     public void MenuManager()
@@ -35,17 +42,31 @@ public class MenuOptions : MonoBehaviour
         }
     }
 
-    private void Update()
+    public void MenuManager(string command)
     {
-        if (Input.GetKeyDown("up"))
+        switch (command)
         {
-            AnimMenuOptions("hide");
-        }
+            case "show":
+                menuState = true;
+                ShowMenuOptions();
+            break;
 
-        if (Input.GetKeyDown("down"))
-        {
-            AnimMenuOptions("show");
+            case "hide":
+                menuState = false;
+                HideMenuOptions();
+            break;
+
+            default:
+                Debug.Log("Comando errado");
+                break;
+
+
         }
+    }
+
+   public void ActivationMenu(bool a)
+    {
+        menuButtons.SetActive(a);
     }
 
     void ShowMenuOptions()
@@ -53,13 +74,20 @@ public class MenuOptions : MonoBehaviour
         Scene.scene.fade.PlayAnimFadeOn();
     }
 
+
+
     void HideMenuOptions()
     {
-        //Scene.scene.fade.PlayAnimFadeOff();
-        AnimMenuOptions("hide");
+        Scene.scene.fade.PlayAnimFadeOff();
+        //AnimMenuOptions("hide");
     }
 
-    public void AnimMenuOptions(string value)
+
+
+
+
+
+   /* public void AnimMenuOptions(string value)
     {
         if( value == "show")
         {
@@ -72,6 +100,6 @@ public class MenuOptions : MonoBehaviour
             gameObject.GetComponentInChildren<Animator>().SetBool("menuActive", false);
             gameObject.GetComponentInChildren<Animator>().SetBool("action", true);
         }
-    }
+    }*/
 
 }
