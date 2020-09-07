@@ -18,20 +18,24 @@ public class SceneCycle : MonoBehaviour
     }
 
     public void PlayAudioList()
-    {
+    {        
         StartCoroutine(PlayAudioClipList(0));
     }
 
     private IEnumerator PlayAudioClipList(int audioListCountPosition)
     {
-        if (audioList[audioListCountPosition])
+        //if (audioList[audioListCountPosition])
+        //Debug.Log("Lengh " + audioList.Length + "   Count  " + audioListCountPosition);
+        if(audioList.Length > audioListCountPosition)
         {
+            
             AudioController.audioController.PlayAudio(audioList[audioListCountPosition]);
             yield return new WaitForSeconds(audioList[audioListCountPosition].length);
             StartCoroutine(PlayAudioClipList(audioListCountPosition+1));
         }
         else
         {
+            Debug.Log("nonooooooooo");
             yield return true;
         }
     }

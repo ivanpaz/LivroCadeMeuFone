@@ -19,6 +19,11 @@ public class Scene : MonoBehaviour
     public Fade fade;
     public MenuOptions menuOptions;
     SceneCycle sceneCycle;
+    public ScenesManager sceneManager;
+    [SerializeField]
+    int[] scenesOrder; // 0 - Char; 1 - background; 2 - friends
+    
+
 
 
 
@@ -39,9 +44,10 @@ public class Scene : MonoBehaviour
         fade = Fade.instance;
         menuOptions = MenuOptions.instance;
         sceneCycle = (new GameObject("SceneCycleObject")).AddComponent<SceneCycle>();
+        sceneManager = new ScenesManager();
+        sceneManager.PrepareManager(scenesOrder);
 
-                
-        sceneCycle.SetAudioList(audioClips);
+        //sceneCycle.SetAudioList(audioClips);
     }
 
 
@@ -58,6 +64,7 @@ public class Scene : MonoBehaviour
 
         if (Input.GetKeyDown("space"))
         {
+            
             menuOptions.MenuManager();
 
         }
@@ -103,24 +110,25 @@ public class Scene : MonoBehaviour
     {
         Char2.instance.ChangeImage(prefabChar2.spriteAtor);
         menuOptions.MenuManager("hide");
-        scene.audioClips = GetActorAudioList(prefabChar2);
-        
+        //audioClips = GetActorAudioList(prefabChar2);
+        sceneCycle.SetAudioList(GetActorAudioList(prefabChar2));
+
 
     }
 
     AudioClip[] GetActorAudioList( Ator ator)
     {
-        if (gameConfig["Language"] == "pt")
+        if (gameConfig["Language"].ToString() == "pt")
         {
             return ator.atorAudioList;
         }
         else
-        if (gameConfig["Language"] == "en")
+        if (gameConfig["Language"].ToString() == "en")
         {
             return ator.atorAudiosList_Eng;
         }
         else
-        if (gameConfig["Language"] == "pt")
+        if (gameConfig["Language"].ToString() == "pt")
         {
             return ator.atorAudiosList_Spa;
         }
@@ -134,6 +142,7 @@ public class Scene : MonoBehaviour
 
     public void InitSceneCycle()
     {
+        
         sceneCycle.PlayAudioList();
     }
 

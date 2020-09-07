@@ -21,14 +21,5 @@ public class Ator : MonoBehaviour
     [Tooltip("Char1; Char2, Background;")]
     public string typeChar;
    
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
