@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AtorPrincipal : MonoBehaviour
+public class AtorPrincipal : Actor
 {
 
     //AudioClip[] audios;
@@ -32,10 +32,6 @@ public class AtorPrincipal : MonoBehaviour
 
 
 
-
-    [Header("Sprites")]
-    public Sprite spriteAtor;
-    public Sprite avatar;
 
 
 

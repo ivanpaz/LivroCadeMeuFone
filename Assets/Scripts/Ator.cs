@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ator : MonoBehaviour
+public class Ator : Actor
 {
     [Header("Clips")]
     //public AudioClip[] atorClips;
@@ -13,13 +13,7 @@ public class Ator : MonoBehaviour
 
 
 
-    [Header("Sprites")]
-    public Sprite spriteAtor;
-    public Sprite avatar;
-
-    [Header("Informações")]
-    [Tooltip("Char1; Char2, Background;")]
-    public string typeChar;
+    
    
     
 }

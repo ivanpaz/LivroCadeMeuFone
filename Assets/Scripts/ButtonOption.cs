@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ButtonOption : MonoBehaviour
 {
     [SerializeField]
-    Ator prefabAtor;
+    Actor prefabAtor;
 
    
 
@@ -24,20 +24,22 @@ public class ButtonOption : MonoBehaviour
 
     public void OnClickedAvatar()
     {
-        if (prefabAtor.typeChar == "Char2")
-        {
 
-            
-
-            //Avisar a cena
-            Scene.scene.PrepareSceneChar2(prefabAtor);
-
-            already = true;
-            GetComponent<Image>().color = Color.grey;
-            GetComponent<Button>().interactable = false;
-
+        if (prefabAtor.typeChar == "Char1")
+        {  //Avisar a cena
+            Debug.Log("Char1111");
         }
-        
+        if (prefabAtor.typeChar == "Char2")
+        {  //Avisar a cena
+            Scene.scene.PrepareSceneChar2(prefabAtor.GetComponent<Ator>());
+        }
+
+
+        already = true;
+        GetComponent<Image>().color = Color.grey;
+        GetComponent<Button>().interactable = false;
+
+
 
     }
 

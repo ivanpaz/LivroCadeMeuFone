@@ -43,6 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dec1ddd916059c40b93d002801b17b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteAtor: {fileID: 21300000, guid: 0b103e0f748cce6449079c2be78c9cd0, type: 3}
+  avatar: {fileID: 21300000, guid: a46ddd667fed7074f8ac6c69824865dc, type: 3}
+  typeChar: Char1
   eraUmaVez01: {fileID: 8300000, guid: 130ccdc383ab4674590b93b75917fc51, type: 3}
   OndeEsta02: {fileID: 8300000, guid: 1114e0e4e6abfad46873140de6131e6f, type: 3}
   procurar03_espaco: {fileID: 8300000, guid: 387dd69a010df0648b8e01b80c14e39e, type: 3}
@@ -56,5 +59,3 @@ MonoBehaviour:
   encontrou10: {fileID: 8300000, guid: bced23b84c371bc4f8c16dac90d03df4, type: 3}
   naoAcredito11: {fileID: 8300000, guid: 55f9dd7b75bd010449d99075b4950b5c, type: 3}
   comemorar12: {fileID: 8300000, guid: 56e744f71f606904b939ceb28148cb20, type: 3}
-  spriteAtor: {fileID: 21300000, guid: 0b103e0f748cce6449079c2be78c9cd0, type: 3}
-  avatar: {fileID: 21300000, guid: a46ddd667fed7074f8ac6c69824865dc, type: 3}
