@@ -26,12 +26,16 @@ public class ButtonOption : MonoBehaviour
     {
         if (prefabAtor.typeChar == "Char2")
         {
+
+            
+
             //Avisar a cena
             Scene.scene.PrepareSceneChar2(prefabAtor);
 
             already = true;
-
+            GetComponent<Image>().color = Color.grey;
             GetComponent<Button>().interactable = false;
+
         }
         
 

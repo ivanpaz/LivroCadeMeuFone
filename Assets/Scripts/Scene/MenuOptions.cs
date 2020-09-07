@@ -8,10 +8,15 @@ public class MenuOptions : MonoBehaviour
 
     [Header("MenuOptions")]
     bool menuState = false;
-    [SerializeField]
-    GameObject menuButtons;
 
-    
+    [SerializeField]
+    GameObject menuButtonsChar1;
+    [SerializeField]
+    GameObject menuButtonsChar2;
+    [SerializeField]
+    GameObject menuButtonsBackground;
+
+
     // Start is called before the first frame update
 
     public static MenuOptions instance { get; private set; }
@@ -25,7 +30,7 @@ public class MenuOptions : MonoBehaviour
     }
      void Start()
     {
-        menuButtons.SetActive(false);
+        DesactiveMenus();
     }
 
     public void MenuManager()
@@ -64,9 +69,37 @@ public class MenuOptions : MonoBehaviour
         }
     }
 
-   public void ActivationMenu(bool a)
+   public void ActivationMenu(int typeMenuScene )
     {
-        menuButtons.SetActive(a);
+        ActiveMenuScene(typeMenuScene);
+    }
+
+    public void ActivationMenu(bool a)
+    {
+        DesactiveMenus();
+    }
+
+    void ActiveMenuScene(int type)
+    {
+        if (type == 0)
+        {
+            menuButtonsChar1.SetActive(true);
+        }
+        if (type == 1)
+        {
+            menuButtonsBackground.SetActive(true);
+        }
+        if (type == 2)
+        {
+            menuButtonsChar2.SetActive(true);
+        }
+    }
+
+    void DesactiveMenus()
+    {
+        menuButtonsChar1.SetActive(false);
+        menuButtonsBackground.SetActive(false);
+        menuButtonsChar2.SetActive(false);
     }
 
     void ShowMenuOptions()

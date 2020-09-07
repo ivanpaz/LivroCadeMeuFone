@@ -34,7 +34,7 @@ public class Fade : MonoBehaviour
         {
 
 
-            Scene.scene.menuOptions.ActivationMenu(true);
+            Scene.scene.menuOptions.ActivationMenu(Scene.scene.sceneManager.ReturnTypScene());
         }
         if (anim == "out")
         {
