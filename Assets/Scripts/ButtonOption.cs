@@ -13,11 +13,13 @@ public class ButtonOption : MonoBehaviour
 
 
     public string name;
+    public bool already = false;
    
 
     void Start()
     {
         GetComponent<Image>().sprite = prefabAtor.avatar;
+        GetComponent<Button>().interactable = true;
     }
 
     public void OnClickedAvatar()
@@ -26,6 +28,10 @@ public class ButtonOption : MonoBehaviour
         {
             //Avisar a cena
             Scene.scene.PrepareSceneChar2(prefabAtor);
+
+            already = true;
+
+            GetComponent<Button>().interactable = false;
         }
         
 

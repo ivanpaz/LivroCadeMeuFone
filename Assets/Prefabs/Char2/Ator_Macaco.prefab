@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &9049605339260351037
+--- !u!1 &3670420126979299502
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6885260525403952612}
-  - component: {fileID: 1343876817306482219}
+  - component: {fileID: 1221601693324820343}
+  - component: {fileID: 6764181700197194936}
   m_Layer: 0
-  m_Name: Ator_Alien
+  m_Name: Ator_Macaco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6885260525403952612
+--- !u!4 &1221601693324820343
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9049605339260351037}
+  m_GameObject: {fileID: 3670420126979299502}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -17.857935, y: 10.335528, z: 250.26784}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,23 +31,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1343876817306482219
+--- !u!114 &6764181700197194936
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9049605339260351037}
+  m_GameObject: {fileID: 3670420126979299502}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0db658bd907fd7247afd91ec4d9f6af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   atorAudioList:
-  - {fileID: 8300000, guid: aeff51db81113c94cb11928db7a141f8, type: 3}
-  - {fileID: 8300000, guid: 3070660b62d7be1448aee167001769d0, type: 3}
+  - {fileID: 8300000, guid: d6dae8fabf357a6419ecc8ed6244ae24, type: 3}
+  - {fileID: 8300000, guid: ec4113d8a9fb8bd47bc99969e596774f, type: 3}
   atorAudiosList_Eng: []
   atorAudiosList_Spa: []
-  spriteAtor: {fileID: 21300000, guid: 9d5519d3bcd15ec41a4c0e6579d720b6, type: 3}
-  avatar: {fileID: 21300000, guid: 2179bee02083ae24ab90d6f293e04d16, type: 3}
+  spriteAtor: {fileID: 21300000, guid: 449dffa8c29386e48a046ae73676e594, type: 3}
+  avatar: {fileID: 21300000, guid: 75ec59cf7f7b855418c270fd51d7dd72, type: 3}
   typeChar: Char2

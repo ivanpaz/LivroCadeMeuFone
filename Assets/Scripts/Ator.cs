@@ -8,6 +8,9 @@ public class Ator : MonoBehaviour
     //public AudioClip[] atorClips;
     
     public AudioClip[] atorAudioList;
+    public AudioClip[] atorAudiosList_Eng;
+    public AudioClip[] atorAudiosList_Spa;
+
 
 
     [Header("Sprites")]
@@ -17,6 +20,7 @@ public class Ator : MonoBehaviour
     [Header("Informações")]
     [Tooltip("Char1; Char2, Background;")]
     public string typeChar;
+   
     void Start()
     {
         

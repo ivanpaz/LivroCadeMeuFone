@@ -19,12 +19,13 @@ public class Scene : MonoBehaviour
     public Fade fade;
     public MenuOptions menuOptions;
     SceneCycle sceneCycle;
-    
 
-    
+
+
 
     [Header("Externos")]
-    public int numSCenes = 0;
+
+    public Hashtable gameConfig;
 
 
     [Header("Temporarios de Teste")]
@@ -33,6 +34,8 @@ public class Scene : MonoBehaviour
 
     void Start()
     {
+        gameConfig = new Hashtable();
+
         fade = Fade.instance;
         menuOptions = MenuOptions.instance;
         sceneCycle = (new GameObject("SceneCycleObject")).AddComponent<SceneCycle>();
@@ -65,6 +68,32 @@ public class Scene : MonoBehaviour
         }
     }
 
+
+    public void prepareGame(string language)
+    {
+        //pt - en - sp
+        switch (language)
+        {
+            case "pt":
+                gameConfig.Add("Language", "pt");
+                break;
+
+            case "en":
+                gameConfig.Add("Language", "en");
+                break;
+
+            case "sp":
+                gameConfig.Add("Language", "sp");
+                break;
+
+            default:
+                gameConfig.Add("Language", "pt");
+                break;
+
+        }
+
+    }
+
     public void PrepararCenaChar1()
     {
 
@@ -74,9 +103,34 @@ public class Scene : MonoBehaviour
     {
         Char2.instance.ChangeImage(prefabChar2.spriteAtor);
         menuOptions.MenuManager("hide");
-        sceneCycle.SetAudioList(prefabChar2.atorAudioList);
+        scene.audioClips = GetActorAudioList(prefabChar2);
+        
 
     }
+
+    AudioClip[] GetActorAudioList( Ator ator)
+    {
+        if (gameConfig["Language"] == "pt")
+        {
+            return ator.atorAudioList;
+        }
+        else
+        if (gameConfig["Language"] == "en")
+        {
+            return ator.atorAudiosList_Eng;
+        }
+        else
+        if (gameConfig["Language"] == "pt")
+        {
+            return ator.atorAudiosList_Spa;
+        }
+        else
+        {
+            return ator.atorAudioList; ;
+        }
+    }
+
+
 
     public void InitSceneCycle()
     {
