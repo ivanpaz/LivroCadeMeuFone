@@ -27,6 +27,11 @@ public class Char1 : Imagem
         PrepareActor(0);
     }
 
+    public AtorPrincipal GetActor()
+    {
+        return atorPrincipal;
+    }
+
     public void PrepareActor(int momento)// 0 - Char; 1 - background; 2 - friends; 3 - Final; 
     {
         if (momento == 0)

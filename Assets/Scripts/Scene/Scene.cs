@@ -80,30 +80,7 @@ public class Scene : MonoBehaviour
     }
 
 
-    public void prepareGame(string language)
-    {
-        //pt - en - sp
-        switch (language)
-        {
-            case "pt":
-                gameConfig.Add("Language", "pt");
-                break;
-
-            case "en":
-                gameConfig.Add("Language", "en");
-                break;
-
-            case "sp":
-                gameConfig.Add("Language", "sp");
-                break;
-
-            default:
-                gameConfig.Add("Language", "pt");
-                break;
-
-        }
-
-    }
+    
 
     public void PrepareSceneChar1(AtorPrincipal prefabChar1)
     {
@@ -124,8 +101,8 @@ public class Scene : MonoBehaviour
 
     public void PrepareSceneBackground(AtorBackground background)
     {
-        Debug.Log(background.spriteAtor.name);
-        Char2.instance.ChangeImage(background.spriteAtor);
+        
+        Fundo.instance.ChangeImage(background.spriteAtor);
         menuOptions.MenuManager("hide");
        
         sceneCycle.SetAudioList(GetAudioList(background));
@@ -135,17 +112,17 @@ public class Scene : MonoBehaviour
 
     AudioClip[] GetAudioList( Ator ator)
     {
-        if (gameConfig["Language"].ToString() == "pt")
+        if (sceneManager.idioma == "pt")
         {
             return ator.atorAudioList;
         }
         else
-        if (gameConfig["Language"].ToString() == "en")
+        if (sceneManager.idioma == "en")
         {
             return ator.atorAudiosList_Eng;
         }
         else
-        if (gameConfig["Language"].ToString() == "pt")
+        if (sceneManager.idioma == "pt")
         {
             return ator.atorAudiosList_Spa;
         }
@@ -157,17 +134,17 @@ public class Scene : MonoBehaviour
 
     AudioClip[] GetAudioList(AtorBackground ator)
     {
-        if (gameConfig["Language"].ToString() == "pt")
+        if (sceneManager.idioma == "pt")
         {
             return ator.backgroundAudios;
         }
         else
-        if (gameConfig["Language"].ToString() == "en")
+        if (sceneManager.idioma == "en")
         {
             return ator.backgroundAudios_Eng;
         }
         else
-        if (gameConfig["Language"].ToString() == "pt")
+        if (sceneManager.idioma == "pt")
         {
             return ator.backgroundAudios_Spa;
         }

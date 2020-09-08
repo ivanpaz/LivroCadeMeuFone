@@ -22,7 +22,11 @@ public class ScenesManager : MonoBehaviour
     public void NextScene()
     {
         actualScene++;
-        StartScene();
+        if (actualScene < scenesOrder.Length)
+        {
+            StartScene();
+        }else { Debug.Log("Fim da historia"); }
+        
     }
 
     public int ReturnTypScene()
@@ -44,10 +48,12 @@ public class ScenesManager : MonoBehaviour
 
     public void StartScene()
     {
+        
+
         if (scenesOrder[actualScene] == 0)
         {
 
-        }
+        }else
         if (scenesOrder[actualScene] == 1)
         {
             if (Scene.scene.sceneManager.idioma == "pt")
@@ -59,11 +65,32 @@ public class ScenesManager : MonoBehaviour
             }
             
 
-        }
+        }else
 
         if (scenesOrder[actualScene] == 2)
         {
 
+            //Verificar se é a primeira interação com os amigos
+            if (scenesOrder[actualScene-1] != 2)
+            {
+                Char1.instance.PrepareActor(2);
+
+                if (Scene.scene.sceneManager.idioma == "pt")
+                {
+
+                    Scene.scene.sceneCycle.SetAudioList(Char1.instance.GetActor().GetAudioClipScenaChar1(2));
+                    Scene.scene.sceneCycle.PlayAudioListIntro();
+
+                }
+
+
+            }
+
+
+        }
+        else
+        {
+            Debug.Log("Indicativo errado para cena");
         }
 
     }

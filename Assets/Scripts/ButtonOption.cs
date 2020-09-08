@@ -12,7 +12,7 @@ public class ButtonOption : MonoBehaviour
 
 
 
-    public string name;
+    public string nameButton;
     public bool already = false;
    
 
@@ -42,6 +42,7 @@ public class ButtonOption : MonoBehaviour
         if (prefabAtor.typeChar == "Background")
         {  //Avisar a cena
             Scene.scene.PrepareSceneBackground(prefabAtor.GetComponent<AtorBackground>());
+            Scene.scene.sceneManager.background = nameButton;
         }
 
 
