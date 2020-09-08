@@ -204,7 +204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &217419842
 RectTransform:
   m_ObjectHideFlags: 0
@@ -602,7 +602,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &654685818
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1454,6 +1454,7 @@ MonoBehaviour:
   menuOptions: {fileID: 0}
   sceneCycle: {fileID: 0}
   sceneManager: {fileID: 0}
+  introBack: {fileID: 0}
   scenesOrder: 0000000001000000
   audioClips:
   - {fileID: 8300000, guid: 7c48c7249c2104b44b876affde0fce71, type: 3}
@@ -1636,7 +1637,7 @@ GameObject:
   - component: {fileID: 1944661237}
   - component: {fileID: 1944661236}
   m_Layer: 5
-  m_Name: buttonAvatar.Alien
+  m_Name: buttonAvatar.Espaco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1673,9 +1674,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f0d0d7c0be0b3242ab61315db32d277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabAtor: {fileID: 1343876817306482219, guid: ad97269be0737b443b2f8d4da14b7faa,
+  prefabAtor: {fileID: 9164736036330978566, guid: 27de648042bd3414084ebf7e13667521,
     type: 3}
-  name: Astronauta
+  name: Espaco
   already: 0
 --- !u!114 &1944661237
 MonoBehaviour:

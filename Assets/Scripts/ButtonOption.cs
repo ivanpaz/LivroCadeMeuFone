@@ -39,6 +39,11 @@ public class ButtonOption : MonoBehaviour
             Scene.scene.PrepareSceneChar2(prefabAtor.GetComponent<Ator>());
         }
 
+        if (prefabAtor.typeChar == "Background")
+        {  //Avisar a cena
+            Scene.scene.PrepareSceneBackground(prefabAtor.GetComponent<AtorBackground>());
+        }
+
 
         DesableButton();
 

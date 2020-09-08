@@ -52,7 +52,10 @@ public class ScenesManager : MonoBehaviour
         {
             if (Scene.scene.sceneManager.idioma == "pt")
             {
-                StartCoroutine(PlayAudioClip(GetComponent<IntroBackground>().introPt));
+               
+                //StartCoroutine(PlayAudioClip(Scene.scene.introBack.introPt));
+                AudioController.audioController.PlayAudio(Scene.scene.introBack.introPt);
+                Scene.scene.menuOptions.MenuManager();
             }
             
 

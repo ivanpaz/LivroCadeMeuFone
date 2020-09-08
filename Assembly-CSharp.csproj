@@ -63,13 +63,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Actor.cs" />
+    <Compile Include="Assets\Scripts\Actors\Actor.cs" />
+    <Compile Include="Assets\Scripts\Actors\Ator.cs" />
+    <Compile Include="Assets\Scripts\Actors\AtorBackground.cs" />
+    <Compile Include="Assets\Scripts\Actors\AtorPrincipal.cs" />
     <Compile Include="Assets\Scripts\Animations\FadeAnimScript.cs" />
     <Compile Include="Assets\Scripts\Animations\FadeOutAnimScript.cs" />
     <Compile Include="Assets\Scripts\Animations\HideFadeAnimScript.cs" />
     <Compile Include="Assets\Scripts\Animations\MenuMoveScript.cs" />
-    <Compile Include="Assets\Scripts\Ator.cs" />
-    <Compile Include="Assets\Scripts\AtorPrincipal.cs" />
     <Compile Include="Assets\Scripts\AudioController.cs" />
     <Compile Include="Assets\Scripts\ButtonOption.cs" />
     <Compile Include="Assets\Scripts\Char1.cs" />

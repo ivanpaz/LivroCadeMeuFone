@@ -20,6 +20,9 @@ public class Scene : MonoBehaviour
     public MenuOptions menuOptions;
     public SceneCycle sceneCycle;
     public ScenesManager sceneManager;
+
+    public IntroBackground introBack;
+
     [SerializeField]
     int[] scenesOrder; // 0 - Char; 1 - background; 2 - friends; 3 - Final
     
@@ -40,7 +43,8 @@ public class Scene : MonoBehaviour
     void Start()
     {
         gameConfig = new Hashtable();
-
+        introBack = GetComponent<IntroBackground>();
+        
         fade = Fade.instance;
         menuOptions = MenuOptions.instance;
         sceneCycle = (new GameObject("SceneCycleObject")).AddComponent<SceneCycle>();
@@ -113,12 +117,23 @@ public class Scene : MonoBehaviour
         Char2.instance.ChangeImage(prefabChar2.spriteAtor);
         menuOptions.MenuManager("hide");
         //audioClips = GetActorAudioList(prefabChar2);
-        sceneCycle.SetAudioList(GetActor2AudioList(prefabChar2));
+        sceneCycle.SetAudioList(GetAudioList(prefabChar2));
 
 
     }
 
-    AudioClip[] GetActor2AudioList( Ator ator)
+    public void PrepareSceneBackground(AtorBackground background)
+    {
+        Debug.Log(background.spriteAtor.name);
+        Char2.instance.ChangeImage(background.spriteAtor);
+        menuOptions.MenuManager("hide");
+       
+        sceneCycle.SetAudioList(GetAudioList(background));
+
+
+    }
+
+    AudioClip[] GetAudioList( Ator ator)
     {
         if (gameConfig["Language"].ToString() == "pt")
         {
@@ -137,6 +152,28 @@ public class Scene : MonoBehaviour
         else
         {
             return ator.atorAudioList; ;
+        }
+    }
+
+    AudioClip[] GetAudioList(AtorBackground ator)
+    {
+        if (gameConfig["Language"].ToString() == "pt")
+        {
+            return ator.backgroundAudios;
+        }
+        else
+        if (gameConfig["Language"].ToString() == "en")
+        {
+            return ator.backgroundAudios_Eng;
+        }
+        else
+        if (gameConfig["Language"].ToString() == "pt")
+        {
+            return ator.backgroundAudios_Spa;
+        }
+        else
+        {
+            return ator.backgroundAudios; ;
         }
     }
 

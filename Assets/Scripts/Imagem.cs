@@ -18,6 +18,7 @@ public class Imagem : MonoBehaviour
 
     public void ChangeImage(Sprite img)
     {
+        Debug.Log("lalalalalalalalala    " + img.name);
         GetComponentInChildren<SpriteRenderer>().sprite = img;
     }
 

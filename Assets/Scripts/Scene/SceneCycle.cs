@@ -36,6 +36,7 @@ public class SceneCycle : MonoBehaviour
         else
         {
             Debug.Log("nonooooooooo");
+            Scene.scene.sceneManager.NextScene();
             yield return true;
         }
     }
