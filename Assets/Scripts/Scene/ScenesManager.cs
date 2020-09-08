@@ -11,6 +11,8 @@ public class ScenesManager : MonoBehaviour
     int[] scenesOrder; // 0 - Char; 1 - background; 2 - friends
     int actualScene = 0;
 
+    public AudioClip audioChamada;
+
 
     public void PrepareManager(int[] parentSceneOrder)
     {
@@ -20,6 +22,7 @@ public class ScenesManager : MonoBehaviour
     public void NextScene()
     {
         actualScene++;
+        StartScene();
     }
 
     public int ReturnTypScene()
@@ -39,7 +42,7 @@ public class ScenesManager : MonoBehaviour
         yield return true;
     }
 
-    public void PlayScene()
+    public void StartScene()
     {
         if (scenesOrder[actualScene] == 0)
         {
@@ -47,6 +50,11 @@ public class ScenesManager : MonoBehaviour
         }
         if (scenesOrder[actualScene] == 1)
         {
+            if (Scene.scene.sceneManager.idioma == "pt")
+            {
+                StartCoroutine(PlayAudioClip(GetComponent<IntroBackground>().introPt));
+            }
+            
 
         }
 

@@ -44,8 +44,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAtor: {fileID: 21300000, guid: 0b103e0f748cce6449079c2be78c9cd0, type: 3}
-  avatar: {fileID: 21300000, guid: a46ddd667fed7074f8ac6c69824865dc, type: 3}
+  avatar: {fileID: 21300000, guid: e45fff37efccfc547a83017bc5909a3b, type: 3}
   typeChar: Char1
+  spriteAtor_1: {fileID: 21300000, guid: 5787bf5753f63364288ee9f92f0922c4, type: 3}
+  spriteAtor_2: {fileID: 21300000, guid: 0b103e0f748cce6449079c2be78c9cd0, type: 3}
+  spriteAtor_3: {fileID: 21300000, guid: 4e89375710062694a8992c85330cffae, type: 3}
+  spriteAtor_4: {fileID: 21300000, guid: 08bea4483881a6042a375fab2b102714, type: 3}
   eraUmaVez01: {fileID: 8300000, guid: 130ccdc383ab4674590b93b75917fc51, type: 3}
   OndeEsta02: {fileID: 8300000, guid: 1114e0e4e6abfad46873140de6131e6f, type: 3}
   procurar03_espaco: {fileID: 8300000, guid: 387dd69a010df0648b8e01b80c14e39e, type: 3}

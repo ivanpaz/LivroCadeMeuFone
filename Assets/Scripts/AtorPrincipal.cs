@@ -5,6 +5,17 @@ using UnityEngine;
 public class AtorPrincipal : Actor
 {
 
+    [Header("Sprites")]
+    [SerializeField]
+    Sprite spriteAtor_1;
+    [SerializeField]
+    Sprite spriteAtor_2;
+    [SerializeField]
+    Sprite spriteAtor_3;
+    [SerializeField]
+    Sprite spriteAtor_4;
+
+
     //AudioClip[] audios;
 
 
@@ -37,7 +48,34 @@ public class AtorPrincipal : Actor
 
    
 
+
+
     //---------------------------------//
+
+
+    public Sprite GetSprite (int a)
+    {
+        if (a == 1)
+        {
+            return spriteAtor_1;
+        }
+
+        if (a == 2)
+        {
+            return spriteAtor_2;
+        }
+
+        if (a == 3)
+        {
+            return spriteAtor_3;
+        }
+
+        if (a == 4)
+        {
+            return spriteAtor_4;
+        }
+        return spriteAtor;
+    }
 
     public AudioClip[] GetAudioClipScenaChar1(int momento)
     {

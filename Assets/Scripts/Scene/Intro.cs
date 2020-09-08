@@ -10,8 +10,11 @@ public class Intro : MonoBehaviour
 
     [SerializeField]
     GameObject menuIntro;
-      
 
+    private void Start()
+    {
+        menuIntro.SetActive(true);
+    }
 
 
     public void ChoosePt()

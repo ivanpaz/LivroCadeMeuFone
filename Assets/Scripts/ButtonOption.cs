@@ -20,6 +20,11 @@ public class ButtonOption : MonoBehaviour
     {
         GetComponent<Image>().sprite = prefabAtor.avatar;
         GetComponent<Button>().interactable = true;
+
+        if (already)
+        {
+            DesableButton();
+        }
     }
 
     public void OnClickedAvatar()
@@ -27,7 +32,7 @@ public class ButtonOption : MonoBehaviour
 
         if (prefabAtor.typeChar == "Char1")
         {  //Avisar a cena
-            Debug.Log("Char1111");
+            Scene.scene.PrepareSceneChar1(prefabAtor.GetComponent<AtorPrincipal>());
         }
         if (prefabAtor.typeChar == "Char2")
         {  //Avisar a cena
@@ -35,12 +40,17 @@ public class ButtonOption : MonoBehaviour
         }
 
 
+        DesableButton();
+
+
+
+    }
+
+    void DesableButton()
+    {
         already = true;
         GetComponent<Image>().color = Color.grey;
         GetComponent<Button>().interactable = false;
-
-
-
     }
 
 }

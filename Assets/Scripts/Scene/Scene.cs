@@ -18,10 +18,10 @@ public class Scene : MonoBehaviour
     [Header("Internos")]
     public Fade fade;
     public MenuOptions menuOptions;
-    SceneCycle sceneCycle;
+    public SceneCycle sceneCycle;
     public ScenesManager sceneManager;
     [SerializeField]
-    int[] scenesOrder; // 0 - Char; 1 - background; 2 - friends
+    int[] scenesOrder; // 0 - Char; 1 - background; 2 - friends; 3 - Final
     
 
 
@@ -101,9 +101,11 @@ public class Scene : MonoBehaviour
 
     }
 
-    public void PrepararCenaChar1()
+    public void PrepareSceneChar1(AtorPrincipal prefabChar1)
     {
-
+        //Char1.instance.ChangeImage(prefabChar1.spriteAtor);
+        Char1.instance.SetActor(prefabChar1);
+        menuOptions.MenuManager("hide");
     }
 
     public void PrepareSceneChar2(Ator prefabChar2)
@@ -111,12 +113,12 @@ public class Scene : MonoBehaviour
         Char2.instance.ChangeImage(prefabChar2.spriteAtor);
         menuOptions.MenuManager("hide");
         //audioClips = GetActorAudioList(prefabChar2);
-        sceneCycle.SetAudioList(GetActorAudioList(prefabChar2));
+        sceneCycle.SetAudioList(GetActor2AudioList(prefabChar2));
 
 
     }
 
-    AudioClip[] GetActorAudioList( Ator ator)
+    AudioClip[] GetActor2AudioList( Ator ator)
     {
         if (gameConfig["Language"].ToString() == "pt")
         {

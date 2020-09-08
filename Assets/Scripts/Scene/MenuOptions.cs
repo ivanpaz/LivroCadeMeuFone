@@ -31,6 +31,7 @@ public class MenuOptions : MonoBehaviour
      void Start()
     {
         DesactiveMenus();
+
     }
 
     public void MenuManager()
