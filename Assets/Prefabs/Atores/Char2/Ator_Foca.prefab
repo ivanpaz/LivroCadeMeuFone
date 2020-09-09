@@ -43,11 +43,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0db658bd907fd7247afd91ec4d9f6af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteAtor: {fileID: 21300000, guid: 5003952508538a343b5b1523655ec294, type: 3}
+  avatar: {fileID: 21300000, guid: ea5903fb4425e4049af9ac6ff94b8648, type: 3}
+  typeChar: Char2
   atorAudioList:
   - {fileID: 8300000, guid: 235aa055e172dfc4bae764f789bf0ede, type: 3}
   - {fileID: 8300000, guid: 899e3c172e643d04d9fba9cd3b91b473, type: 3}
   atorAudiosList_Eng: []
   atorAudiosList_Spa: []
-  spriteAtor: {fileID: 21300000, guid: 3a6976de3fbdb3048be2cd6ab4bc38b6, type: 3}
-  avatar: {fileID: 21300000, guid: fad4a3adda41e524bb94cae0c7b28419, type: 3}
-  typeChar: Char2

@@ -111,8 +111,12 @@ public class AtorPrincipal : Actor
                 return audios4;
 
             case 5:
-                AudioClip[] audios5 = new AudioClip[] { ningume09, encontrou10, naoAcredito11 , comemorar12 };
+                AudioClip[] audios5 = new AudioClip[] { ningume09, encontrou10 };
                 return audios5;
+
+            case 6:
+                AudioClip[] audios6 = new AudioClip[] { naoAcredito11  , comemorar12 };
+                return audios6;
 
 
             default:

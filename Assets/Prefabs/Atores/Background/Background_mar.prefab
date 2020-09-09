@@ -47,7 +47,6 @@ MonoBehaviour:
   avatar: {fileID: 21300000, guid: b9ac5bff919b3cc478b1c9337f26e901, type: 3}
   typeChar: Background
   backgroundAudios:
-  - {fileID: 8300000, guid: 0345eac41caeee545b898e3b69890b0d, type: 3}
   - {fileID: 8300000, guid: 6f4cf02f8b80dd0488a6ad0dfeb67a3e, type: 3}
   backgroundAudios_Eng: []
   backgroundAudios_Spa: []

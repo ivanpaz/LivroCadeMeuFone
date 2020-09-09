@@ -21,6 +21,11 @@ public class Imagem : MonoBehaviour
         GetComponentInChildren<SpriteRenderer>().sprite = img;
     }
 
+    public void CleanImage()
+    {
+        GetComponentInChildren<SpriteRenderer>().sprite = null;
+    }
+
     public string TesteSingle()
     {
         return "opa";

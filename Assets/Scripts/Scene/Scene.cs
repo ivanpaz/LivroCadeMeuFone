@@ -91,6 +91,7 @@ public class Scene : MonoBehaviour
 
     public void PrepareSceneChar2(Ator prefabChar2)
     {
+        Char1.instance.PrepareActor(2);
         Char2.instance.ChangeImage(prefabChar2.spriteAtor);
         menuOptions.MenuManager("hide");
         //audioClips = GetActorAudioList(prefabChar2);
