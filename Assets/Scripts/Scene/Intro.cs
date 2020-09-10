@@ -13,7 +13,7 @@ public class Intro : MonoBehaviour
 
     private void Start()
     {
-        menuIntro.SetActive(true);
+        ActivateMenuIntro();
     }
 
 
@@ -47,4 +47,8 @@ public class Intro : MonoBehaviour
         Scene.scene.menuOptions.MenuManager();
     }
 
+    public void ActivateMenuIntro()
+    {
+        menuIntro.SetActive(true);
+    }
 }

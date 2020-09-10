@@ -63,3 +63,4 @@ MonoBehaviour:
   encontrou10: {fileID: 8300000, guid: bced23b84c371bc4f8c16dac90d03df4, type: 3}
   naoAcredito11: {fileID: 8300000, guid: 55f9dd7b75bd010449d99075b4950b5c, type: 3}
   comemorar12: {fileID: 8300000, guid: 56e744f71f606904b939ceb28148cb20, type: 3}
+  musicaFinal: {fileID: 8300000, guid: c6d698fcf3cda9a4c9dac64c41fbb164, type: 3}

@@ -59,4 +59,11 @@ public class ButtonOption : MonoBehaviour
         GetComponent<Button>().interactable = false;
     }
 
+    public void EnableButton()
+    {
+        already = false;
+        GetComponent<Image>().color = Color.white;
+        GetComponent<Button>().interactable = true;
+    }
+
 }

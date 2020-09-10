@@ -20,7 +20,7 @@ public class Scene : MonoBehaviour
     public MenuOptions menuOptions;
     public SceneCycle sceneCycle;
     public ScenesManager sceneManager;
-
+    
     public IntroBackground introBack;
 
     [SerializeField]
@@ -31,56 +31,37 @@ public class Scene : MonoBehaviour
 
 
 
-    [Header("Externos")]
+    
+   
+    
 
-    public Hashtable gameConfig;
 
-
-    [Header("Temporarios de Teste")]
-    public AudioClip[] audioClips;
 
 
     void Start()
     {
-        gameConfig = new Hashtable();
+       
         introBack = GetComponent<IntroBackground>();
         
         fade = Fade.instance;
         menuOptions = MenuOptions.instance;
         sceneCycle = (new GameObject("SceneCycleObject")).AddComponent<SceneCycle>();
-        sceneManager = new ScenesManager();
+        sceneManager = (new GameObject("ScenesManagerObject")).AddComponent<ScenesManager>();
         sceneManager.PrepareManager(scenesOrder);
 
-        //sceneCycle.SetAudioList(audioClips);
+       
     }
 
 
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        InputsTests();
-
-    }
-
-    void InputsTests()
-    {
-
         if (Input.GetKeyDown("space"))
         {
-            
-            menuOptions.MenuManager();
-
-        }
-
-        if (Input.GetKeyDown("p"))
-        {
-            sceneCycle.PlayAudioList();
+            Debug.Log("Restart");
+            RestartController.instance.RestartGame();
         }
     }
 
-
-    
 
     public void PrepareSceneChar1(AtorPrincipal prefabChar1)
     {

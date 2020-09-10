@@ -26,16 +26,7 @@ public class AudioController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-
-            StartCoroutine(PlayAudios(audioPlaying));
-        }
-
-    }
+   
 
     IEnumerator PlayAudios(int nextAudio)
     {       
@@ -49,6 +40,11 @@ public class AudioController : MonoBehaviour
     public void PlayAudio(AudioClip audio)
     {
         audioSource.PlayOneShot(audio);
+    }
+
+    public void StopAll()
+    {
+        audioSource.Stop();
     }
 
 }

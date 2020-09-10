@@ -5,7 +5,7 @@ using UnityEngine;
 public class Fundo : Imagem
 {
     public static Fundo instance { get; private set; }
-
+    Sprite backgroudDefault;
 
     private void Awake()
     {
@@ -17,6 +17,14 @@ public class Fundo : Imagem
     }
     // Start is called before the first frame update
 
-    
-    
+    private void Start()
+    {
+        backgroudDefault = GetComponentInChildren<SpriteRenderer>().sprite;
+    }
+
+    public void RestartBackgroud()
+    {
+        ChangeImage(backgroudDefault);
+    }
+
 }

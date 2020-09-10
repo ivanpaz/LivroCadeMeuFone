@@ -14,6 +14,11 @@ public class ScenesManager : MonoBehaviour
 
     public AudioClip audioChamada;
 
+    public void RestartSceneManager()
+    {
+        actualScene = 0;
+        numAmigos = 0;
+    }
 
     public void PrepareManager(int[] parentSceneOrder)
     {
@@ -26,7 +31,11 @@ public class ScenesManager : MonoBehaviour
         if (actualScene < scenesOrder.Length)
         {
             StartScene();
-        }else { Debug.Log("Fim da historia"); }
+        }else { 
+            Debug.Log("Fim da historia");
+            LastScene();
+            
+        }
         
     }
 
@@ -136,5 +145,19 @@ public class ScenesManager : MonoBehaviour
         }
 
     }
-   
+
+    public void LastScene()
+    {
+        AudioController.audioController.PlayAudio(Char1.instance.GetActor().musicaFinal);
+        StartCoroutine(ShowRestartButton());
+    }
+
+    IEnumerator ShowRestartButton()
+    {
+        
+        yield return new WaitForSeconds(2);
+        RestartController.instance.restartButton.SetActive(true);
+
+    }
+
 }

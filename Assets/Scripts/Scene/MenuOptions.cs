@@ -96,11 +96,12 @@ public class MenuOptions : MonoBehaviour
         }
     }
 
-    void DesactiveMenus()
+    public void DesactiveMenus()
     {
         menuButtonsChar1.SetActive(false);
         menuButtonsBackground.SetActive(false);
         menuButtonsChar2.SetActive(false);
+        RestartController.instance.restartButton.SetActive(false);
     }
 
     void ShowMenuOptions()
