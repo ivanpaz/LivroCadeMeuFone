@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAtor: {fileID: 21300000, guid: 779c599dc15dfff4f9166c5e5bec1657, type: 3}
-  avatar: {fileID: 21300000, guid: c37b8ad122bb20e41986bab9e6c85e67, type: 3}
+  avatar: {fileID: 21300000, guid: a6c8a86729fb0f948b844fc59aa0cb68, type: 3}
   typeChar: Char2
   atorAudioList:
   - {fileID: 8300000, guid: 7983bd4d24f25004cb91b8a5d56efeb0, type: 3}

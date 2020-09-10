@@ -118,7 +118,7 @@ public class ScenesManager : MonoBehaviour
                 if (numAmigos == 2)
             {
                 Char2.instance.CleanImage();
-                Char1.instance.PrepareActor(3);
+                Char1.instance.PrepareActor(5);
 
                 if (Scene.scene.sceneManager.idioma == "pt")
                 {
@@ -139,7 +139,7 @@ public class ScenesManager : MonoBehaviour
                 if (numAmigos == 3)
             {
                 Char2.instance.CleanImage();
-                Char1.instance.PrepareActor(3);
+                Char1.instance.PrepareActor(5);
 
                 if (Scene.scene.sceneManager.idioma == "pt")
                 {
@@ -220,7 +220,8 @@ public class ScenesManager : MonoBehaviour
     {
         
         yield return new WaitForSeconds(2);
-        RestartController.instance.restartButton.SetActive(true);
+        RestartController.instance.ShowMenu();
+        //RestartController.instance.restartButton.SetActive(true);
 
     }
 

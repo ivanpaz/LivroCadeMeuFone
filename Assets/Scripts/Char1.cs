@@ -77,6 +77,12 @@ public class Char1 : Imagem
             }
             atual = 3;
         }
+        if (momento == 5)
+        {
+            atual = 3;
+            ChangeImage(atorPrincipal.GetSprite(5));
+            //Scene.scene.sceneCycle.SetAudioList
+        }
     }
 
 

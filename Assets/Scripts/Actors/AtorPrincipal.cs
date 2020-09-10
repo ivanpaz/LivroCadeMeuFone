@@ -14,6 +14,8 @@ public class AtorPrincipal : Actor
     Sprite spriteAtor_3;
     [SerializeField]
     Sprite spriteAtor_4;
+    [SerializeField]
+    Sprite spriteAtor_5;
 
 
     //AudioClip[] audios;
@@ -118,6 +120,11 @@ public class AtorPrincipal : Actor
         if (a == 4)
         {
             return spriteAtor_4;
+        }
+
+        if (a == 5)
+        {
+            return spriteAtor_5;
         }
         return spriteAtor;
     }
@@ -254,7 +261,7 @@ public class AtorPrincipal : Actor
                 return audios3;
 
             case 4:
-                AudioClip[] audios4 = new AudioClip[] { desanimada07_en, encontrou08_en };
+                AudioClip[] audios4 = new AudioClip[] { desanimada07_en };
                 return audios4;
 
             case 5:

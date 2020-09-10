@@ -53,14 +53,7 @@ public class Scene : MonoBehaviour
     }
 
 
-    private void Update()
-    {
-        if (Input.GetKeyDown("space"))
-        {
-            Debug.Log("Restart");
-            RestartController.instance.RestartGame();
-        }
-    }
+   
 
 
     public void PrepareSceneChar1(AtorPrincipal prefabChar1)

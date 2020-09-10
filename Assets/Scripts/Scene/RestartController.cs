@@ -13,26 +13,61 @@ public class RestartController : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
+    [SerializeField]
+    Animator animMenuCredits;
 
     [Header("ButtonRestart")]
     [SerializeField]
     public GameObject restartButton;
+    
 
     [Header("Buttons")]
     [SerializeField]
     ButtonOption[] buttons;
 
-    
+    private void Update()
+    {
+        if (Input.GetKeyDown("left"))
+        {
+            ShowMenu();
+        }
 
+        if (Input.GetKeyDown("right"))
+        {
+            HideMenu();
+        }
+    }
+
+    public void ShowMenu()
+    {
+        animMenuCredits.SetBool("show", true);
+    }
+
+    public void HideMenu()
+    {
+        animMenuCredits.SetBool("hide", true);
+    }
 
     public void RestartGame()
     {
+
+        HideMenu();
+        StartCoroutine(BackMenu());
+
+        
+    }
+
+    IEnumerator BackMenu()
+    {
+
+        yield return new WaitForSeconds(0.8f);
         AudioController.audioController.StopAll();
         RestartButtons();
         Scene.scene.sceneManager.RestartSceneManager();
         RestartImages();
         MenuOptions.instance.DesactiveMenus();
         GetComponent<Intro>().ActivateMenuIntro();
+
     }
 
     void RestartButtons()
