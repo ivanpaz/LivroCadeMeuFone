@@ -48,5 +48,7 @@ MonoBehaviour:
   typeChar: Background
   backgroundAudios:
   - {fileID: 8300000, guid: 6f4cf02f8b80dd0488a6ad0dfeb67a3e, type: 3}
-  backgroundAudios_Eng: []
-  backgroundAudios_Spa: []
+  backgroundAudios_Eng:
+  - {fileID: 8300000, guid: b56692f0f7cb6494f8dbc20f3a8f19dd, type: 3}
+  backgroundAudios_Spa:
+  - {fileID: 8300000, guid: dce04596034c72740b568b6e284d5d5f, type: 3}

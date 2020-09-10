@@ -49,5 +49,9 @@ MonoBehaviour:
   atorAudioList:
   - {fileID: 8300000, guid: ed3ea49da6c49bb46860f43323a0667a, type: 3}
   - {fileID: 8300000, guid: 89572ed74fa25e54fb955270b1a0d47a, type: 3}
-  atorAudiosList_Eng: []
-  atorAudiosList_Spa: []
+  atorAudiosList_Eng:
+  - {fileID: 8300000, guid: 74affa6da51a6c240902ad8cd67532b5, type: 3}
+  - {fileID: 8300000, guid: eeeeb6f52dff16849a317d760496f7f9, type: 3}
+  atorAudiosList_Spa:
+  - {fileID: 8300000, guid: 495050b5a4a9fd54e96b95e393af810e, type: 3}
+  - {fileID: 8300000, guid: 538cb60aba05d1742a2d8e089a0769c6, type: 3}

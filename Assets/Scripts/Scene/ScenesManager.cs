@@ -68,12 +68,19 @@ public class ScenesManager : MonoBehaviour
         if (scenesOrder[actualScene] == 1)
         {
             if (Scene.scene.sceneManager.idioma == "pt")
-            {
-
-                //StartCoroutine(PlayAudioClip(Scene.scene.introBack.introPt));
-                AudioController.audioController.PlayAudio(Scene.scene.introBack.introPt);
-                Scene.scene.menuOptions.MenuManager();
+            {    
+                AudioController.audioController.PlayAudio(Scene.scene.introBack.introPt);                
             }
+            if (Scene.scene.sceneManager.idioma == "sp")
+            {
+                AudioController.audioController.PlayAudio(Scene.scene.introBack.introSp);
+            }
+
+            if (Scene.scene.sceneManager.idioma == "en")
+            {
+                AudioController.audioController.PlayAudio(Scene.scene.introBack.introEn);
+            }
+            Scene.scene.menuOptions.MenuManager();
 
 
         }
@@ -89,15 +96,22 @@ public class ScenesManager : MonoBehaviour
                 Char1.instance.PrepareActor(2);
 
 
-
+                Char2.instance.CleanImage();
                 if (Scene.scene.sceneManager.idioma == "pt")
-                {
-                    Char2.instance.CleanImage();
-                    Scene.scene.sceneCycle.SetAudioList(Char1.instance.GetActor().GetAudioClipScenaChar1(2));
-                    Scene.scene.sceneCycle.PlayAudioListIntro();
-
+                {                    
+                    Scene.scene.sceneCycle.SetAudioList(Char1.instance.GetActor().GetAudioClipScenaChar1(2));                    
                 }
 
+                if (Scene.scene.sceneManager.idioma == "sp")
+                {
+                    Scene.scene.sceneCycle.SetAudioList(Char1.instance.GetActor().GetAudioClipScenaChar1_sp(2));
+                }
+
+                if (Scene.scene.sceneManager.idioma == "en")
+                {
+                    Scene.scene.sceneCycle.SetAudioList(Char1.instance.GetActor().GetAudioClipScenaChar1_en(2));
+                }
+                Scene.scene.sceneCycle.PlayAudioListIntro();
 
             }
             else
@@ -105,7 +119,20 @@ public class ScenesManager : MonoBehaviour
             {
                 Char2.instance.CleanImage();
                 Char1.instance.PrepareActor(3);
-                Scene.scene.sceneCycle.SetAudioList(Char1.instance.GetActor().GetAudioClipScenaChar1(3));
+
+                if (Scene.scene.sceneManager.idioma == "pt")
+                {
+                    Scene.scene.sceneCycle.SetAudioList(Char1.instance.GetActor().GetAudioClipScenaChar1(3));
+                }
+                if (Scene.scene.sceneManager.idioma == "sp")
+                {
+                    Scene.scene.sceneCycle.SetAudioList(Char1.instance.GetActor().GetAudioClipScenaChar1_sp(3));
+                }
+                if (Scene.scene.sceneManager.idioma == "en")
+                {
+                    Scene.scene.sceneCycle.SetAudioList(Char1.instance.GetActor().GetAudioClipScenaChar1_en(3));
+                }
+
                 Scene.scene.sceneCycle.PlayAudioListIntro();
             }
             else
@@ -113,7 +140,20 @@ public class ScenesManager : MonoBehaviour
             {
                 Char2.instance.CleanImage();
                 Char1.instance.PrepareActor(3);
-                Scene.scene.sceneCycle.SetAudioList(Char1.instance.GetActor().GetAudioClipScenaChar1(4));
+
+                if (Scene.scene.sceneManager.idioma == "pt")
+                {
+                    Scene.scene.sceneCycle.SetAudioList(Char1.instance.GetActor().GetAudioClipScenaChar1(4));
+                }
+                if (Scene.scene.sceneManager.idioma == "sp")
+                {
+                    Scene.scene.sceneCycle.SetAudioList(Char1.instance.GetActor().GetAudioClipScenaChar1_sp(4));
+                }
+                if (Scene.scene.sceneManager.idioma == "en")
+                {
+                    Scene.scene.sceneCycle.SetAudioList(Char1.instance.GetActor().GetAudioClipScenaChar1_en(4));
+                }
+
                 Scene.scene.sceneCycle.PlayAudioListIntro();
             }
 
@@ -127,14 +167,38 @@ public class ScenesManager : MonoBehaviour
             if (scenesOrder[actualScene-1] != 3)
             {
                 Char1.instance.PrepareActor(3);
-                Scene.scene.sceneCycle.SetAudioList(Char1.instance.GetActor().GetAudioClipScenaChar1(5));
+                if (Scene.scene.sceneManager.idioma == "pt")
+                {
+                    Scene.scene.sceneCycle.SetAudioList(Char1.instance.GetActor().GetAudioClipScenaChar1(5));
+                }
+
+                if (Scene.scene.sceneManager.idioma == "sp")
+                {
+                    Scene.scene.sceneCycle.SetAudioList(Char1.instance.GetActor().GetAudioClipScenaChar1_sp(5));
+                }
+
+                if (Scene.scene.sceneManager.idioma == "en")
+                {
+                    Scene.scene.sceneCycle.SetAudioList(Char1.instance.GetActor().GetAudioClipScenaChar1_en(5));
+                }
                 Scene.scene.sceneCycle.PlayAudioList();
             }
             else
             {
                 Debug.Log("Ultima cena");
                 Char1.instance.PrepareActor(3);
-                Scene.scene.sceneCycle.SetAudioList(Char1.instance.GetActor().GetAudioClipScenaChar1(6));
+                if (Scene.scene.sceneManager.idioma == "pt")
+                {
+                    Scene.scene.sceneCycle.SetAudioList(Char1.instance.GetActor().GetAudioClipScenaChar1(6));
+                }
+                if (Scene.scene.sceneManager.idioma == "sp")
+                {
+                    Scene.scene.sceneCycle.SetAudioList(Char1.instance.GetActor().GetAudioClipScenaChar1_sp(6));
+                }
+                if (Scene.scene.sceneManager.idioma == "en")
+                {
+                    Scene.scene.sceneCycle.SetAudioList(Char1.instance.GetActor().GetAudioClipScenaChar1_en(6));
+                }
                 Scene.scene.sceneCycle.PlayAudioList();
             }
             

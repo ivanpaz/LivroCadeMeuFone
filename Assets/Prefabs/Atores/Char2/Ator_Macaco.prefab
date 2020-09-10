@@ -43,11 +43,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0db658bd907fd7247afd91ec4d9f6af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  atorAudioList:
-  - {fileID: 8300000, guid: d6dae8fabf357a6419ecc8ed6244ae24, type: 3}
-  - {fileID: 8300000, guid: ec4113d8a9fb8bd47bc99969e596774f, type: 3}
-  atorAudiosList_Eng: []
-  atorAudiosList_Spa: []
   spriteAtor: {fileID: 21300000, guid: 449dffa8c29386e48a046ae73676e594, type: 3}
   avatar: {fileID: 21300000, guid: 75ec59cf7f7b855418c270fd51d7dd72, type: 3}
   typeChar: Char2
+  atorAudioList:
+  - {fileID: 8300000, guid: d6dae8fabf357a6419ecc8ed6244ae24, type: 3}
+  - {fileID: 8300000, guid: ec4113d8a9fb8bd47bc99969e596774f, type: 3}
+  atorAudiosList_Eng:
+  - {fileID: 8300000, guid: 5fe2610736e4bb14298628bfd1b7f55e, type: 3}
+  - {fileID: 8300000, guid: 17e933add6343134abf593e6d19b8206, type: 3}
+  atorAudiosList_Spa:
+  - {fileID: 8300000, guid: 9fa17eaf17dafca4cbb12ef7b6375a2d, type: 3}
+  - {fileID: 8300000, guid: 87957cca2ab97b44c963ea7379a0bb40, type: 3}

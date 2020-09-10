@@ -38,7 +38,20 @@ public class Char1 : Imagem
         {
             atual = 0;
             ChangeImage(atorPrincipal.GetSprite(1));
-            Scene.scene.sceneCycle.SetAudioList(atorPrincipal.GetAudioClipScenaChar1(1));
+            if (Scene.scene.sceneManager.idioma == "pt")
+            {
+                Scene.scene.sceneCycle.SetAudioList(atorPrincipal.GetAudioClipScenaChar1(1));
+            }
+
+            if (Scene.scene.sceneManager.idioma == "sp")
+            {
+                Scene.scene.sceneCycle.SetAudioList(atorPrincipal.GetAudioClipScenaChar1_sp(1));
+            }
+            if (Scene.scene.sceneManager.idioma == "en")
+            {
+                Scene.scene.sceneCycle.SetAudioList(atorPrincipal.GetAudioClipScenaChar1_en(1));
+            }
+
 
         }
         if (momento == 1)

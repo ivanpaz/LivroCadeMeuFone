@@ -63,4 +63,34 @@ MonoBehaviour:
   encontrou10: {fileID: 8300000, guid: bced23b84c371bc4f8c16dac90d03df4, type: 3}
   naoAcredito11: {fileID: 8300000, guid: 55f9dd7b75bd010449d99075b4950b5c, type: 3}
   comemorar12: {fileID: 8300000, guid: 56e744f71f606904b939ceb28148cb20, type: 3}
+  eraUmaVez01_sp: {fileID: 8300000, guid: f4a60668c71ca5a498c815279b97ac3e, type: 3}
+  OndeEsta02_sp: {fileID: 8300000, guid: 0897f6e740d566040a29da452f71b2e3, type: 3}
+  procurar03_espaco_sp: {fileID: 8300000, guid: fda6c4661b1e7bc428efd0e19dd28243,
+    type: 3}
+  procurar03_mar_sp: {fileID: 8300000, guid: 2cb50b8307a82634283af2fddc6d6e0c, type: 3}
+  encontrou04_sp: {fileID: 8300000, guid: 162959e20ab7bfd49a60bb90da8b75aa, type: 3}
+  continuouProcurar05_sp: {fileID: 8300000, guid: a1577454e1a9d294dba0eaa9be76e89c,
+    type: 3}
+  encontrou06_sp: {fileID: 8300000, guid: 5141bef9515645344915fd886e497678, type: 3}
+  desanimada07_sp: {fileID: 8300000, guid: c4e34b9316a7e9d46b7ab0fe9efe5c79, type: 3}
+  encontrou08_sp: {fileID: 8300000, guid: b423421401574f744af3fcf171d59bd1, type: 3}
+  ningume09_sp: {fileID: 8300000, guid: ebf0d29162c75eb4e952f79e7bd0f8db, type: 3}
+  encontrou10_sp: {fileID: 8300000, guid: 7d7ba58b045b0c541af4517a6821e010, type: 3}
+  naoAcredito11_sp: {fileID: 8300000, guid: 1a9097178ca72d149bf76539ed2ddc83, type: 3}
+  comemorar12_sp: {fileID: 8300000, guid: 2e8161f49a6a4814b9aeaa02dd05aca1, type: 3}
+  eraUmaVez01_en: {fileID: 8300000, guid: 9a5d4096e6e82c749ab601d336cf67f1, type: 3}
+  OndeEsta02_en: {fileID: 8300000, guid: 8c7484a473e982b47a824fb2ad85f67a, type: 3}
+  procurar03_espaco_en: {fileID: 8300000, guid: 400914b3b626d10419627e717cac9ab6,
+    type: 3}
+  procurar03_mar_en: {fileID: 8300000, guid: b52922e50c4af6f48adc99f71441122e, type: 3}
+  encontrou04_en: {fileID: 8300000, guid: e54a6c81301578b4e889b2381e5c6fcd, type: 3}
+  continuouProcurar05_en: {fileID: 8300000, guid: bf47b8edb9fb49e4c8f231d378109f74,
+    type: 3}
+  encontrou06_en: {fileID: 8300000, guid: fbd63ed9e224b3c4dab6cab25c448da9, type: 3}
+  desanimada07_en: {fileID: 8300000, guid: d32d40e15d7dadf42808dab488e98d8e, type: 3}
+  encontrou08_en: {fileID: 8300000, guid: 461bf2d365640484381429d435600767, type: 3}
+  ningume09_en: {fileID: 8300000, guid: fb7fa6757ca98b94f877cb28e13b70db, type: 3}
+  encontrou10_en: {fileID: 8300000, guid: b74fb4519413c9b499cb2f884937ade1, type: 3}
+  naoAcredito11_en: {fileID: 8300000, guid: 6fa1dccf6d06bb548b27411d6b2be29e, type: 3}
+  comemorar12_en: {fileID: 8300000, guid: f9f2771adeb813f4a9879b05b7be3906, type: 3}
   musicaFinal: {fileID: 8300000, guid: c6d698fcf3cda9a4c9dac64c41fbb164, type: 3}

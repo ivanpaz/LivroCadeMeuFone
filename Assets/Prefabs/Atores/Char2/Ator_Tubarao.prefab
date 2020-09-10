@@ -43,11 +43,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0db658bd907fd7247afd91ec4d9f6af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  atorAudioList:
-  - {fileID: 8300000, guid: ed3ea49da6c49bb46860f43323a0667a, type: 3}
-  - {fileID: 8300000, guid: 89572ed74fa25e54fb955270b1a0d47a, type: 3}
-  atorAudiosList_Eng: []
-  atorAudiosList_Spa: []
-  spriteAtor: {fileID: 21300000, guid: 7b90ac7db9844104494ba7b7e6a24afe, type: 3}
+  spriteAtor: {fileID: 21300000, guid: 779c599dc15dfff4f9166c5e5bec1657, type: 3}
   avatar: {fileID: 21300000, guid: c37b8ad122bb20e41986bab9e6c85e67, type: 3}
   typeChar: Char2
+  atorAudioList:
+  - {fileID: 8300000, guid: 7983bd4d24f25004cb91b8a5d56efeb0, type: 3}
+  - {fileID: 8300000, guid: 1966df5bd59f1294e84f61b3a787c386, type: 3}
+  atorAudiosList_Eng:
+  - {fileID: 8300000, guid: e17722fc4b218944b8c29d6f76d621d6, type: 3}
+  - {fileID: 8300000, guid: bf9b7face78e68c489c8c85ed9c52134, type: 3}
+  atorAudiosList_Spa:
+  - {fileID: 8300000, guid: 4bc07eed8bb2aa64e8fcfcca2e2620d7, type: 3}
+  - {fileID: 8300000, guid: 01c1afa6a17afd245986e29cfa1a58f7, type: 3}

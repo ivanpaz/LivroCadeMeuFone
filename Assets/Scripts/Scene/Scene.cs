@@ -98,13 +98,13 @@ public class Scene : MonoBehaviour
         {
             return ator.atorAudioList;
         }
-        else
+
         if (sceneManager.idioma == "en")
         {
             return ator.atorAudiosList_Eng;
         }
-        else
-        if (sceneManager.idioma == "pt")
+
+        if (sceneManager.idioma == "sp")
         {
             return ator.atorAudiosList_Spa;
         }
@@ -126,7 +126,7 @@ public class Scene : MonoBehaviour
             return ator.backgroundAudios_Eng;
         }
         else
-        if (sceneManager.idioma == "pt")
+        if (sceneManager.idioma == "sp")
         {
             return ator.backgroundAudios_Spa;
         }
