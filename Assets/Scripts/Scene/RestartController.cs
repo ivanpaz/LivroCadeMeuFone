@@ -53,10 +53,17 @@ public class RestartController : MonoBehaviour
 
         HideMenu();
         StartCoroutine(BackMenu());
+        StartCoroutine(DisableCredits());
 
         
     }
 
+
+    IEnumerator DisableCredits()
+    {
+        yield return new WaitForSeconds(1f);
+        restartButton.SetActive(false);
+    }
     IEnumerator BackMenu()
     {
 

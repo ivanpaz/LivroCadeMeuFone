@@ -30,17 +30,11 @@ public class Scene : MonoBehaviour
 
 
 
-
-    
-   
-    
-
-
-
-
     void Start()
     {
-       
+
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
+        RestartController.instance.restartButton.SetActive(false);
         introBack = GetComponent<IntroBackground>();
         
         fade = Fade.instance;

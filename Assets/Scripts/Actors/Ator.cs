@@ -9,11 +9,5 @@ public class Ator : Actor
     
     public AudioClip[] atorAudioList;
     public AudioClip[] atorAudiosList_Eng;
-    public AudioClip[] atorAudiosList_Spa;
-
-
-
-    
-   
-    
+    public AudioClip[] atorAudiosList_Spa;    
 }

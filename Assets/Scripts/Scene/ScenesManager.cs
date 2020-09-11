@@ -33,10 +33,8 @@ public class ScenesManager : MonoBehaviour
             StartScene();
         }else { 
             Debug.Log("Fim da historia");
-            LastScene();
-            
-        }
-        
+            LastScene();            
+        }        
     }
 
     public int ReturnTypScene()
@@ -220,6 +218,7 @@ public class ScenesManager : MonoBehaviour
     {
         
         yield return new WaitForSeconds(2);
+        RestartController.instance.restartButton.SetActive(true);
         RestartController.instance.ShowMenu();
         //RestartController.instance.restartButton.SetActive(true);
 
